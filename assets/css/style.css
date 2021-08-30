@@ -1,5 +1,7 @@
+/** Google Font Import **/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
+/** Whole Page Styling **/
 :root {
     background-color: #0b3954;
 }
@@ -9,7 +11,7 @@
     font-family: 'Bebas Neue', cursive;
     color: #ff5a5f;
     text-align: center;
-    font-size: 8rem;
+    font-size: 5rem;
     
 }
 
@@ -22,7 +24,7 @@
 #logo p {
     font-family: 'Montserrat', sans-serif;
     padding-top: 0;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 /** Homepage Buttons **/
@@ -34,12 +36,19 @@
 }
 
 .btn {
-    font-size: 2rem;
+    font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
     color: #0b3954;
     text-decoration: none;
     text-align: center;
     background-color: #ff5a5f;
-    padding: 1rem;
-    width: 15rem;
+    padding: 0.5rem;
+    width: 10rem;
+}
+
+/** changes to page layout for desktop - drop whole page content down from the top of the page **/
+@media only screen and (min-width: 768px) {
+    body {
+        margin: 120px 10px;
+    }
 }
