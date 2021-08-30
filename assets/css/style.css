@@ -1,1 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
+
+:root {
+    background-color: #0b3954;
+}
+
+/** Index Logo Section **/
+#logo {
+    font-family: 'Bebas Neue', cursive;
+    color: #ff5a5f;
+    text-align: center;
+    font-size: 8rem;
+}
+
+#logo h1 {
+    margin: 0;
+    padding-top: 20px;
+}
+
+#logo p {
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 0;
+    font-size: 1.5rem;
+}
+
+/** Homepage Buttons **/
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0b3954;
+    text-decoration: none;
+    background-color: #ff5a5f;
+    padding: 1rem;
+}
