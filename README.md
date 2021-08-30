@@ -1,8 +1,6 @@
-# ![images](assets/images/logo2.jpg)  
+![images](docs/mockup/...) mockup here
 
-![images](docs/mockup/responsive-mockup.png)
-
-[View the deployed site here](https://beth-t93.github.io/ci_ms1_btphotography/)
+[View the deployed site here](https://.../)
 
 ## Table of Contents
 
@@ -44,62 +42,48 @@ This constant flow of new questions will reduce the risk of users getting bored 
 
 ## User Experience
 ### User Goals
-An easy to use website
-A way to contact the photographer directly
-Key details, such as contact details and location are easy to find
-Easy to find examples of the photographers work and any projects they are working on
-Information should be current and up to date
+- An easy to use site
+- Start the game quickly and easily
+- Be constantly engaged during the game with feedback on answers
+- The questions will be updated regularly to avoid repeat questions
+- The site will be eyecatching, but also uses a design and colour scheme that is not difficult to read and use.
+
 
 ### Target Audience
-- Other artists
-- People who like photography and would like to find out more about a body of work
-- Students who are researching other photographers for their work
+- Quiz enthusiast
+- Someone looking to pass the time without having to invest time in signing up to a site
+- A casual user
+- 
 ### User Stories
-#### First Time Visitor Goals
-1. As a first time visitor I want to know what the main aim of the website is and find out more information about the photographer,
-2. As a first time visitor I want the website to be easy to use and navigate.
-3. As a first time visitor I want the website to be accessible.
-4. As a first time visitor I would like to look at their social media to see more of their work and any reviews.
-5. As a first time visitor I would like to know about any new projects or exhibitions that the photographer may be featured in.
-6. As a first time visitor I would like to be able to contact the photographer quickly and easily with any questions or to commission them.
-
-#### Returning Visitor Goals
-7. As a returning visitor I want to be able to see any new work or updates to any work
-8. As a returning visitor I want to be able to contact the photographer as I am interested in commissioning some work or purchasing some of their work.
+#### Visitor Goals
+1. As a first time visitor I want the site to be easy and simple to use
+2. As a first time visitor I want the site to be colourful and eyecatching, as well as be easy to read
+3. As a first time visitor I would like the option to choose the question category
+4. As a first time visitor I would like the option to chosse the question difficulty
+5. As a first time visitor I want to be able to return to the site and not get the same questions every time.
 
 #### Site Owner Goals
-9. As a site owner I want to show off my work to demonstrate my skill as a photographer
-10. As a site owner I want to make connections with potential new customers
-11. A a site owner I want user to be able to make contact easily for opportunities, including commissions, exhibitions, events and talks.
+9. As a site owner I want the site to be easy to use
 
 ### User Requirements and Expectations
 #### Requirements
-- Easy to navigate using the menu
-- Appealing imagery and design
-- Relevant information to accompany the images
-- Easy way to contact the photographer
-- Clean design that allows the images to be the main attraction to the website
+- Easy to navigate
+- Appealing design
+- Relevant information to guide the user through the game
+- Clean design that further helps the user navigate throught a game with no distractions.
 
 #### Expectations
-- The navigation links take you to the page they say they will
+- Navigation links and buttons take you to the page they say they will
 - Social media links will open in a separate tab
 - When using the contact button all fields will be required before being able to send the message
-- Lots of images to showcase the photographers work
+- To receive feedback on answers, whether they are correct or not
 
 
 ## Scope
 Based on the above information, features to be included in the design include:
-- An easy to use naviagation bar to allow users to get around the site quickly and easily.
-- A gallery page containing examples of work.
-- A page listing specific projects with more information about each body of work.
-- A section listing any other services offered, such as weddings or commercial photography.
+- An easy to navigate homepage with an obvious path to the game itself
 - An error (404) page to direct site users back to the homepage should there be a broken URL.
 - Favicon to help users identify the site in any tabs.
-- An about section so users are able to find out more about the photographer.
-- An easy to use contact page so users can contact the photographer, either by using the form, or by using the contact information provided.
-- A footer containing easy to access social media links to Facebook, Twitter, Instagram and Linkedin.
-- A map embedded into the site showing users where the photographer is based.
-- Modal providing another option for users to contact the photographer.
 
 ## Structure
 A responsive trivia quiz site consisiting of ... pages
