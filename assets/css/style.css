@@ -10,11 +10,13 @@
     color: #ff5a5f;
     text-align: center;
     font-size: 8rem;
+    
 }
 
 #logo h1 {
     margin: 0;
     padding-top: 20px;
+    letter-spacing: 8px;
 }
 
 #logo p {
@@ -36,6 +38,8 @@
     font-family: 'Montserrat', sans-serif;
     color: #0b3954;
     text-decoration: none;
+    text-align: center;
     background-color: #ff5a5f;
     padding: 1rem;
+    width: 15rem;
 }
