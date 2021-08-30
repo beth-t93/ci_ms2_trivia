@@ -52,3 +52,24 @@
         margin: 120px 10px;
     }
 }
+
+/** Game page Styling **/
+/** Loading Item from https://www.w3schools.com/howto/howto_css_loader.asp **/
+.loadingWheel {
+    border: 2rem solid #bfd7ea;
+    border-radius: 50%;
+    border-top: 2rem solid #ff5a5f;
+    width: 15rem;
+    height: 15rem;
+    animation: spin 3s linear infinite;
+    padding: 20px;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
