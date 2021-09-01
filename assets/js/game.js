@@ -1,7 +1,12 @@
 const question = document.getElementById("question");
+const answerChoices = Array.from(document.getElementsByClassName("choice-text"));
 
 let questionCount = 0;
+let acceptingSelection = false;
+let currentQuestion = {};
+let availableQuestions = [];
 
+let questions = [];
 
 /** Retrieves API data */
 fetch ('https://opentdb.com/api.php?amount=10&category=9&type=multiple')
@@ -41,6 +46,18 @@ function startGame() {
     Gamepad.classlist.remove("hide");
 }
 
-function newQuestion() {
 
+function newQuestion() {
+    const questionIndex = Math.floor(Math.random() * availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText  = currentQuestion.question;
+
+    choices.forEach(choice => {
+        const number = choice.dataset["number"];
+        choice.innerText = currentQuestion["choice" + number];
+    });
+
+    availableQuestions.splice(questionIndex, 1);
+    acceptingSelection = true;
+    
 }
