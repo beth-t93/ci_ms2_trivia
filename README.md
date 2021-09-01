@@ -64,6 +64,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 
 #### Site Owner Goals
 9. As a site owner I want the site to be easy to use
+10. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions
 
 ### User Requirements and Expectations
 #### Requirements
@@ -101,7 +102,7 @@ The colour scheme for this site is meant to be bright and eye catching to the us
 I have chosen a colour scheme that is bright and eyecatching to the user.
  -Colour 1: (Hex: )
 ### Fonts/Typography
-To ensure the website is easily readable while also keeping to the simple and minimal design, the fonts used are: Bebas Neue for headings and Montserrat for all other text (these are taken from Google Fonts library) with sans-serif being the fallback font should either of the selected fonts be unavailable. 
+To ensure the website is easily readable while also keeping to the simple and minimal design, the fonts used are: Bebas Neue for headings and the logo and Montserrat for all other text (these are taken from Google Fonts library) with sans-serif being the fallback font should either of the selected fonts be unavailable. 
 
 ### Imagery
 
