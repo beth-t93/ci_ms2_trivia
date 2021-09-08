@@ -73,14 +73,31 @@ choices.forEach(choice => {
         if(!acceptingAnswers) return;
 
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selecetedAnswer = selectedChoice.dataset["number"];
+        let selectedChoice = e.target;
+        let selecetedAnswer = selectedChoice.dataset["number"];
 
-        const classToApply =
-            selecetedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //will apply class to answer whether incorrect or correct
+        if (selecetedAnswer == currentQuestion.answer) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Thats the right answer!',
+                showConfirmButton: false,
+                timer: 2000
+              });
+              score++;
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops... that is not the right answer!',
+                showConfirmButton: false,
+                timer: 2000
+              });
+        }
 
-        selectedChoice.parentElement.classList.add('classToApply');
-        selectedChoice.parentElement.classList.remove('classToApply');
+        //const classToApply =
+          //  selecetedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //will apply class to answer whether incorrect or correct
+
+       // selectedChoice.parentElement.classList.add('classToApply');
+        //selectedChoice.parentElement.classList.remove('classToApply');
         
         getNewQuestion();
     });

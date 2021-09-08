@@ -1,6 +1,7 @@
 /** Google Font Import **/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
+
 /** Whole Page Styling **/
 :root {
     background-color: #0b3954;
@@ -109,6 +110,9 @@
 }
 
 .choice-text {
-    padding-left: 1rem;
+    padding: 1rem;
     width: 100%;
+    margin: 0%;
+    ;
 }
+
