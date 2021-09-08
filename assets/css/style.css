@@ -73,3 +73,30 @@
         transform: rotate(360deg);
     }
 }
+
+#question {
+    font-family: 'Montserrat', sans-serif;
+    color: #bfd7ea;
+    text-align: center;
+}
+
+.answerChoice {
+    display: flex;
+    margin-bottom: 0.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #0b3954;
+    background-color: #bfd7ea;
+}
+
+.choice-letter {
+    background-color: #ff5a5f;
+    padding: 1rem 2rem;
+    margin: 0%;
+}
+
+.choice-text {
+    padding-left: 10px;
+}
