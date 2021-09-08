@@ -92,13 +92,7 @@ choices.forEach(choice => {
                 timer: 2000
               });
         }
-
-        //const classToApply =
-          //  selecetedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //will apply class to answer whether incorrect or correct
-
-       // selectedChoice.parentElement.classList.add('classToApply');
-        //selectedChoice.parentElement.classList.remove('classToApply');
-        
+                 
         getNewQuestion();
     });
 });
