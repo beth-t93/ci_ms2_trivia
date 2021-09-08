@@ -35,6 +35,11 @@
     padding: 10px;
 }
 
+#buttons:hover {
+    cursor: pointer;
+    transform: scale(1.1); /** Referenced from https://www.w3schools.com/howto/howto_css_zoom_hover.asp **/
+}
+
 .btn {
     font-size: 1.2rem;
     font-family: 'Montserrat', sans-serif;
@@ -91,6 +96,11 @@
     background-color: #bfd7ea;
 }
 
+.answerChoice:hover {
+    cursor: pointer;
+    transform: translate(-0.4rem);
+}
+
 .choice-letter {
     background-color: #ff5a5f;
     padding: 1rem 2rem;
@@ -98,5 +108,5 @@
 }
 
 .choice-text {
-    padding-left: 10px;
+    padding-left: 1rem;
 }
