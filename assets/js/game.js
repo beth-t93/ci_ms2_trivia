@@ -48,10 +48,10 @@ startGame = () => {
 
 
 getNewQuestion = () => {
-
-    if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-        return window.location.assign("/score.html")
-    };
+    if (availableQuesions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+        //go to the end page
+        return window.location.assign('/score.html');
+    }
 
     questionCounter++; //adds 1 onto question counter
     const questionIndex = Math.floor(Math.random() * availableQuesions.length);
@@ -64,7 +64,6 @@ getNewQuestion = () => {
     });
 
     availableQuestions.splice(questionIndex, 1); //Will remove the used question from the available Questions list
-
     acceptingAnswers = true;
 
 };
@@ -76,6 +75,13 @@ choices.forEach(choice => {
         acceptingAnswers = false;
         const selectedChoice = e.target;
         const selecetedAnswer = selectedChoice.dataset["number"];
+
+        const classToApply =
+            selecetedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'; //will apply class to answer whether incorrect or correct
+
+        selectedChoice.parentElement.classList.add('classToApply');
+        selectedChoice.parentElement.classList.remove('classToApply');
+        
         getNewQuestion();
     });
 });
