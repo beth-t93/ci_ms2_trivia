@@ -88,7 +88,12 @@
     font-size: 1.2rem;
     color: #bfd7ea;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#progress-heading {
+    margin: 0%;
 }
 
 /** Quiz area Styling **/
