@@ -76,12 +76,14 @@ choices.forEach(choice => {
         let selectedChoice = e.target;
         let selecetedAnswer = selectedChoice.dataset["number"];
 
+        // Sweet Alert Modals for user feedback from https://sweetalert2.github.io/#examples
         if (selecetedAnswer == currentQuestion.answer) {
             Swal.fire({
                 icon: 'success',
                 title: 'Thats the right answer!',
                 showConfirmButton: false,
                 timer: 2000
+                
               });
               score++;
         } else {

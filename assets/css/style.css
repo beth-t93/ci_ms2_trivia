@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
 
-/** Whole Page Styling **/
+/** Global Styling **/
 :root {
     background-color: #0b3954;
 }
@@ -60,6 +60,7 @@
 }
 
 /** Game page Styling **/
+
 /** Loading Item from https://www.w3schools.com/howto/howto_css_loader.asp **/
 .loadingWheel {
     border: 2rem solid #bfd7ea;
@@ -80,11 +81,23 @@
     }
 }
 
+/** Score and progress section **/
+#progress-display {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    color: #bfd7ea;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/** Quiz area Styling **/
 #question {
     font-family: 'Montserrat', sans-serif;
     color: #bfd7ea;
     text-align: center;
     padding: 2rem 4rem;
+    margin: 0%;
 }
 
 .answerChoice {
