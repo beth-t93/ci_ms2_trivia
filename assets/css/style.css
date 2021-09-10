@@ -5,6 +5,7 @@
 /** Global Styling **/
 :root {
     background-color: #0b3954;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /** Index Logo Section **/
@@ -12,7 +13,7 @@
     font-family: 'Bebas Neue', cursive;
     color: #ff5a5f;
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     
 }
 
@@ -20,12 +21,14 @@
     margin: 0;
     padding-top: 20px;
     letter-spacing: 8px;
+    justify-content: center;
 }
 
 #logo p {
-    font-family: 'Montserrat', sans-serif;
     padding-top: 0;
     font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
 }
 
 /** Homepage Buttons **/
@@ -43,7 +46,6 @@
 
 .btn {
     font-size: 1.2rem;
-    font-family: 'Montserrat', sans-serif;
     color: #0b3954;
     text-decoration: none;
     text-align: center;
@@ -57,6 +59,19 @@
     body {
         margin: 120px 10px;
     }
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.socials a {
+    color: #bfd7ea;
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 200%;
 }
 
 /** Game page Styling **/
@@ -84,7 +99,6 @@
 /** Score and progress section **/
 #progress-display {
     display: flex;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.2rem;
     color: #bfd7ea;
     text-align: center;
@@ -98,7 +112,6 @@
 
 /** Quiz area Styling **/
 #question {
-    font-family: 'Montserrat', sans-serif;
     color: #bfd7ea;
     text-align: center;
     padding: 2rem 4rem;
@@ -111,7 +124,6 @@
     margin-left: 5rem;
     margin-right: 5rem;
     font-size: 1rem;
-    font-family: 'Montserrat', sans-serif;
     color: #0b3954;
     background-color: #bfd7ea;
 }
