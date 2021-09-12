@@ -102,8 +102,8 @@
     font-size: 1.2rem;
     color: #bfd7ea;
     text-align: center;
-    justify-content: space-evenly;
     width: 100%;
+    padding-left: 5rem;
 }
 
 #progress-heading {

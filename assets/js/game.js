@@ -3,7 +3,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 
 let currentQuestion = {};
 let acceptingAnswers = false;
-let score = 0;
+let scoreTitle = 0;
 let questionCounter = 0;
 let availableQuestions = [];
 
@@ -93,10 +93,15 @@ choices.forEach(choice => {
                 showConfirmButton: false,
                 timer: 2000
               });
-        }
-                 
+        }         
         getNewQuestion();
     });
 });
+
+incrementScore = num => {
+    score += num;
+    scoreTitle.innerText = score
+
+}
 
 startGame();
