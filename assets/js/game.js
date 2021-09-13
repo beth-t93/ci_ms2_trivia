@@ -1,22 +1,25 @@
-const questionNumber = document.getElementById('progress-number');
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const loader = document.getElementsByClassName('loadingWheel');
-const game = document.getElementById('game');
+const game = document.getElementById('gameArea');
+const questionNumber = document.getElementById('progress-number');
+
 
 const scoreText = document.getElementById("score");
 
+const maxQuestions = 25;
 
 let currentQuestion = {};
 let acceptingAnswers = false;
 let scoreTitle = 0;
 let questionNumber = 0;
 let availableQuestions = [];
+
 let questions = [];
 
 // Fetch and Catch to pull data from API into the DOM
 fetch(
-    'https://opentdb.com/api.php?amount=10&type=multiple'
+    'https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple'
 )
     .then((res) => {
         return res.json();
@@ -48,7 +51,7 @@ fetch(
     });
 
 
-
+// Starts the game
 startGame = () => {
     questionCounter = 0;
     score = 0;
@@ -56,18 +59,19 @@ startGame = () => {
     getNewQuestion();
     game.classList.remove('hidden');
     loader.classList.add('hidden');
-};
+  };
 
-
+// Pulls a new question and increases question number
 getNewQuestion = () => {
-    if (availableQuesions.length === 0) {
-        //go to the end page
+    if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
+        localStorage.setItem("mostRecentScore", score);
+        //go to score area
         game.classList.add("hide");
         showScore.classList.remove("hide");
         finalScore.innerHTML = (`Congratulations you scored ${score}`);
     } else {
         questionNumber++;
-        questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
+        questionCounterText.innerText = `${questionCounter}`;
 
         const questionIndex = Math.floor(Math.random() * availableQuesions.length);
         currentQuestion = availableQuesions[questionIndex];
@@ -84,6 +88,8 @@ getNewQuestion = () => {
 
 };
 
+
+// listens for answers and gives feedback if correct or incorrect
 choices.forEach(choice => {
     choice.addEventListener('click', e => {
         if(!acceptingAnswers) return;
@@ -101,7 +107,7 @@ choices.forEach(choice => {
                 timer: 2000
                 
               });
-              score++;
+              scoreTitle++;
         } else {
             Swal.fire({
                 icon: 'error',
@@ -109,15 +115,20 @@ choices.forEach(choice => {
                 showConfirmButton: false,
                 timer: 2000
               });
-        }         
-        getNewQuestion();
+        } 
+        
+        selectedChoice.parentElement.classList.add(classToApply);
+        
+        setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classToApply);
+            getNewQuestion();
+          }, 1000);
     });
 });
 
 incrementScore = num => {
     score += num;
     scoreTitle.innerText = score
-
-}
+};
 
 startGame();
