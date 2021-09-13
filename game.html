@@ -10,9 +10,9 @@
 
 </head>
 <body>
-    <!-- <div class="container" id="game">
-        <div class="loadingWheel"></div>
-    </div> -->
+    <div class="container" id="game">
+        <div class="loadingWheel hide"></div>
+    </div>
 
     <section id="gameArea">
         <div id="progress-display">
@@ -42,10 +42,19 @@
         </div>
     </section>
 
+    <section id="scoreArea" class="container hide">
+        <div id="score">
+            <h1>Your Score:</h1>
+            <h1>0</h1>
+        </div>
+        <div id="new-game">
+            <div id="buttons">
+                <a class="btn" href="index.html">Back Home</a>
+            </div>
+        </div>
+    </section>
 
     <script src="/assets/js/game.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    
 </body>
 </html>

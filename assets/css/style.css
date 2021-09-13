@@ -31,6 +31,14 @@
     justify-content: center;
 }
 
+/** Quiz Picker Styling **/
+#quizSelection {
+    color: #bfd7ea;
+    display: inline-block;
+}
+
+
+
 /** Homepage Buttons **/
 #buttons {
     display: flex;
@@ -85,6 +93,7 @@
     height: 15rem;
     animation: spin 3s linear infinite;
     padding: 20px;
+    
 }
 
 @keyframes spin {
@@ -96,7 +105,7 @@
     }
 }
 
-/** Score and progress section **/
+/** Question Number Progress **/
 #progress-display {
     display: flex;
     font-size: 1.2rem;
@@ -146,3 +155,12 @@
     ;
 }
 
+/** Score Area Styling **/
+#score {
+    text-align: center;
+    color: #bfd7ea;
+}
+
+.hide {
+    display: none;
+}
