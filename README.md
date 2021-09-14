@@ -95,12 +95,14 @@ The site will be easy to use across all devices, enabling the user to start a qu
 The style of the site will be simple and minimal so it remains easy to navigate, but also so it keeps the users attention to finish the quiz, and even complete multiple rounds of questions.
 
 ### Colours
-The colour scheme for this site is meant to be bright and eye catching to the user, however there should still be enough contrast between the colours used so that the site remains easy to read and naviagte for periods of time.
+The colour scheme for this site is meant to be bright and eye catching to the user, however there should still be enough contrast between the colours used so that the site remains easy to read and navigate for longer periods of time.
 
-![images](docs//)
+![images](docs/features/ms2-colour-scheme.jpg)
 
 I have chosen a colour scheme that is bright and eyecatching to the user.
- -Colour 1: (Hex: )
+ -Colour 1: (Hex: #0B3954) This is a dark blue that is used for the background thoughout the whole site, it gives the other content a darker background so it is able to stand out from the page. This colour is also used for the text colour on the buttons of the site.
+ -Colour 2: (Hex: #BFD7EA) I chose this colour to contrast well with the background colour, it will be used throughout the site for key information, such as the quiz questions and social media icons.
+ -Colour 3: (Hex: #FF5A5F) This colour is used as a fun pop of colour against the dark background. It will be used for the logo and test content on the home page, as well as give emphasis to other items on the site, such as the answer selection boxes.
 ### Fonts/Typography
 To ensure the website is easily readable while also keeping to the simple and minimal design, the fonts used are: Bebas Neue for headings and the logo and Montserrat for all other text (these are taken from Google Fonts library) with sans-serif being the fallback font should either of the selected fonts be unavailable. 
 
@@ -117,21 +119,21 @@ To ensure the website is easily readable while also keeping to the simple and mi
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
+= [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Other Tools
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) was used to create the brand logo.
-2. [Affinity Photo](https://affinity.serif.com/en-gb/photo/) was used to edit and resize single images used throughout the site.
-3. [Adobe Lightroom](https://www.adobe.com/uk/products/photoshop-lightroom.html?mv=search&mv=search&sdid=L7NVTQ8Y&ef_id=CjwKCAjwwqaGBhBKEiwAMk-FtO7niANG60M6gFSKzq4mI38ypFjQKDYBg1cDM0x8TBU7QUdDG22QsBoC3NMQAvD_BwE:G:s&s_kwcid=AL!3085!3!520937987408!e!!g!!adobe%20lightroom!1422699839!59976285750) was used to edit and resize images on the site. Particularly on the Gallery page where there was a large volume of images which needed to be edited and resized to the same dimensions in order to give a uniform look to the page without losing the quality of the image.
-4. [Git](https://git-scm.com/) was used within VS Code for version control to push code to GitHub.
-5. [Github](https://github.com/) was used as a remote repository to store code.
-6. [Am I Responsive](http://ami.responsivedesign.is/) was used to create the mockup you see at the start of this README.md file
-7. [Google Maps](https://www.google.co.uk/maps/@53.2525881,-3.1265367,14z) was used to embed a map with location pin into the site
-8. [Coolors](https://coolors.co/) was used to help put together the colour scheme used throughout the site.
-9. [Visual Studio Code](https://visualstudio.microsoft.com/) is the IDE I used to develop the project.
-10. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
-11. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
-12. [Bootstrap v5.0.1](https://getbootstrap.com/) was used to create layout and ensure elements were responsive. The elements used include: navigation bar, carousel, accordian, modal and grid.
-13. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
+2. [Sweet Alert](https://sweetalert2.github.io/) was used to create modals for user feedback on each answer.
+3. [Git](https://git-scm.com/) was used within VS Code for version control to push code to GitHub.
+4. [Github](https://github.com/) was used as a remote repository to store code.
+5. [Am I Responsive](http://ami.responsivedesign.is/) was used to create the mockup you see at the start of this README.md file
+6. [Google Maps](https://www.google.co.uk/maps/@53.2525881,-3.1265367,14z) was used to embed a map with location pin into the site
+7. [Coolors](https://coolors.co/) was used to help put together the colour scheme used throughout the site.
+8. [Visual Studio Code](https://visualstudio.microsoft.com/) is the IDE I used to develop the project.
+9. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
+10. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
+11. [Bootstrap v5.0.1](https://getbootstrap.com/) was used to create layout and ensure elements were responsive. The elements used include: navigation bar, carousel, accordian, modal and grid.
+12. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
 
 
 ## Features

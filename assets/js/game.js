@@ -19,7 +19,7 @@ let questions = [];
 
 // Fetch and Catch to pull data from API into the DOM
 fetch(
-    'https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple'
+    "https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple"
 )
     .then((res) => {
         return res.json();
