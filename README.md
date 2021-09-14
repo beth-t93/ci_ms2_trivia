@@ -132,8 +132,7 @@ To ensure the website is easily readable while also keeping to the simple and mi
 8. [Visual Studio Code](https://visualstudio.microsoft.com/) is the IDE I used to develop the project.
 9. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
 10. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
-11. [Bootstrap v5.0.1](https://getbootstrap.com/) was used to create layout and ensure elements were responsive. The elements used include: navigation bar, carousel, accordian, modal and grid.
-12. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
+11. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
 
 
 ## Features
