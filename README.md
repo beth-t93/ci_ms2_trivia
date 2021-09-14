@@ -35,7 +35,7 @@
 
 
 ## Project Goals
-The aim of this project is to create a simple and easy to navigate quiz game. The information for the questions will be pulled from a trivia API so as to allow a bigger range of questions, as well as the ability for new querstions to be added without the need to program new questions directly into the site.
+The aim of this project is to create a simple and easy to navigate quiz game. The information for the questions will be pulled from a trivia API so as to allow a bigger range of questions, as well as the ability for new questions to be added without the need to program new questions directly into the site.
 
 This constant flow of new questions will reduce the risk of users getting bored of too many repeat questions.
 
@@ -53,7 +53,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 - Quiz enthusiast
 - Someone looking to pass the time without having to invest time in signing up to a site
 - A casual user
-- 
+
 ### User Stories
 #### Visitor Goals
 1. As a first time visitor I want the site to be easy and simple to use
