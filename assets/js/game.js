@@ -3,7 +3,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const loader = document.getElementsByClassName('loadingWheel');
 const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
-
+const scoreArea = document.getElementById('scoreArea');
 
 const scoreText = document.getElementById("score");
 
@@ -20,7 +20,7 @@ let questions = [];
 // Fetch and Catch to pull data from API into the DOM
 getData = () => {
     fetch(
-        "https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple"
+        "https://opentdb.com/api.php?amount=2&category=9&difficulty=hard&type=multiple"
     )
         .then((res) => {
             return res.json();
@@ -71,9 +71,10 @@ getNewQuestion = () => {
         localStorage.setItem("mostRecentScore", score);
         //go to score area
         game.classList.add("hide");
-        // showScore.classList.remove("hide");
+        scoreArea.classList.remove("hide");
         //finalScore.innerHTML = (`Congratulations you scored ${score}`);
     } else {
+        scoreArea.classList.add('hide');
         questionNumber++;
         // questionCounterText.innerText = `${questionCounter}`;
 
