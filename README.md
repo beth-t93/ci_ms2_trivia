@@ -1,6 +1,6 @@
 ![images](docs/mockup/...) mockup here
 
-[View the deployed site here](https://.../)
+[View the deployed site here](https://beth-t93.github.io/ci_ms2_trivia/)
 
 ## Table of Contents
 
