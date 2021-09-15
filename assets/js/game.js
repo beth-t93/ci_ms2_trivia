@@ -110,7 +110,7 @@ choices.forEach(choice => {
         if (selecetedAnswer == currentQuestion.answer) {
             Swal.fire({
                 icon: 'success',
-                title: 'Thats the right answer!',
+                title: `Thats the right answer!`,
                 showConfirmButton: false,
                 timer: 2000
                 
@@ -120,7 +120,7 @@ choices.forEach(choice => {
         } else {
             Swal.fire({
                 icon: 'error',
-                title: 'Oops... that is not the right answer!',
+                title: `Oops... that is not the right answer! The correct answer was number ${currentQuestion.answer}`,
                 showConfirmButton: false,
                 timer: 2000
               });
