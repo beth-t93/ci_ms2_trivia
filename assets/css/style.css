@@ -165,3 +165,11 @@
 .hide {
     display: none;
 }
+
+.correct {
+    background-color: #bfd7ea;
+}
+
+.incorrect {
+    background-color: #ff5a5f;
+}
