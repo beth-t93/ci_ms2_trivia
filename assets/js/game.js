@@ -61,8 +61,8 @@ startGame = () => {
     score = 0;
     availableQuesions = [...questions];
     getNewQuestion();
-    game.classList.remove('hidden');
-    loader.classList.add('hidden');
+    game.classList.remove('hide');
+    loader.classList.add('hide');
   };
 
 // Pulls a new question and increases question number
