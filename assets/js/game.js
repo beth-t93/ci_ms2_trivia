@@ -60,6 +60,7 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
+    questionNumberArea.innerHTML = `${questionNumber}`
     getNewQuestion();
     game.classList.remove('hide');
     // loader.classList.add('hide');
@@ -76,6 +77,7 @@ getNewQuestion = () => {
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
+        questionNumberArea.innerHTML = `${questionNumber}`
         // questionCounterText.innerText = `${questionCounter}`;
 
         const questionIndex = Math.floor(Math.random() * availableQuesions.length);
