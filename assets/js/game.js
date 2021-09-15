@@ -111,6 +111,7 @@ choices.forEach(choice => {
                 timer: 2000
                 
               });
+              selectedChoice.parentElement.classList.add('correct');
               scoreTitle++;
         } else {
             Swal.fire({
@@ -119,9 +120,10 @@ choices.forEach(choice => {
                 showConfirmButton: false,
                 timer: 2000
               });
+              selectedChoice.parentElement.classList.add('incorrect');
+
         } 
         
-        selectedChoice.parentElement.classList.add(classToApply);
         
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove(classToApply);
