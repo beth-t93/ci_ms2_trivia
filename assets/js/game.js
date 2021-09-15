@@ -2,7 +2,7 @@ const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const loader = document.getElementsByClassName('loadingWheel');
 const game = document.getElementById('gameArea');
-const questionNumber = document.getElementById('progress-number');
+const questionNumberArea = document.getElementById('progress-number');
 
 
 const scoreText = document.getElementById("score");
@@ -18,37 +18,41 @@ let availableQuestions = [];
 let questions = [];
 
 // Fetch and Catch to pull data from API into the DOM
-fetch(
-    "https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple"
-)
-    .then((res) => {
-        return res.json();
-    })
-    .then((loadedQuestions) => {
-        questions = loadedQuestions.results.map((loadedQuestion) => {
-            const formattedQuestion = {
-                question: loadedQuestion.question,
-            };
-
-            const answerChoices = [...loadedQuestion.incorrect_answers];
-            formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
-            answerChoices.splice(
-                formattedQuestion.answer - 1,
-                0,
-                loadedQuestion.correct_answer
-            );
-
-            answerChoices.forEach((choice, index) => {
-                formattedQuestion['choice' + (index + 1)] = choice;
+getData = () => {
+    fetch(
+        "https://opentdb.com/api.php?amount=25&category=9&difficulty=hard&type=multiple"
+    )
+        .then((res) => {
+            return res.json();
+        })
+        .then((loadedQuestions) => {
+            questions = loadedQuestions.results.map((loadedQuestion) => {
+                const formattedQuestion = {
+                    question: loadedQuestion.question,
+                };
+    
+                const answerChoices = [...loadedQuestion.incorrect_answers];
+                formattedQuestion.answer = Math.floor(Math.random() * 4) + 1;
+                answerChoices.splice(
+                    formattedQuestion.answer - 1,
+                    0,
+                    loadedQuestion.correct_answer
+                );
+    
+                answerChoices.forEach((choice, index) => {
+                    formattedQuestion['choice' + (index + 1)] = choice;
+                });
+    
+                return formattedQuestion;
             });
-
-            return formattedQuestion;
+            startGame();
+        })
+        .catch((err) => {
+            console.error(err);
         });
-        startGame();
-    })
-    .catch((err) => {
-        console.error(err);
-    });
+}
+
+getData();
 
 
 // Starts the game
@@ -67,11 +71,11 @@ getNewQuestion = () => {
         localStorage.setItem("mostRecentScore", score);
         //go to score area
         game.classList.add("hide");
-        showScore.classList.remove("hide");
-        finalScore.innerHTML = (`Congratulations you scored ${score}`);
+        // showScore.classList.remove("hide");
+        //finalScore.innerHTML = (`Congratulations you scored ${score}`);
     } else {
         questionNumber++;
-        questionCounterText.innerText = `${questionCounter}`;
+        // questionCounterText.innerText = `${questionCounter}`;
 
         const questionIndex = Math.floor(Math.random() * availableQuesions.length);
         currentQuestion = availableQuesions[questionIndex];
