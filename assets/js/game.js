@@ -62,7 +62,7 @@ startGame = () => {
     availableQuesions = [...questions];
     getNewQuestion();
     game.classList.remove('hide');
-    loader.classList.add('hide');
+    // loader.classList.add('hide');
   };
 
 // Pulls a new question and increases question number
@@ -126,7 +126,8 @@ choices.forEach(choice => {
         
         
         setTimeout(() => {
-            selectedChoice.parentElement.classList.remove(classToApply);
+            selectedChoice.parentElement.classList.remove('correct');
+            selectedChoice.parentElement.classList.remove('incorrect');
             getNewQuestion();
           }, 1000);
     });
