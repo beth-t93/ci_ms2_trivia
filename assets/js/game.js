@@ -4,6 +4,7 @@ const loader = document.getElementsByClassName('loadingWheel');
 const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
 const scoreArea = document.getElementById('scoreArea');
+const finalScore = document.getElementById('finalScore');
 
 const scoreText = document.getElementById("score");
 
@@ -73,7 +74,7 @@ getNewQuestion = () => {
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
-        //finalScore.innerHTML = (`Congratulations you scored ${score}`);
+        finalScore.innerText = (`Congratulations you scored ${score}`);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
@@ -115,7 +116,7 @@ choices.forEach(choice => {
                 
               });
               selectedChoice.parentElement.classList.add('correct');
-              scoreTitle++;
+              score++;
         } else {
             Swal.fire({
                 icon: 'error',
