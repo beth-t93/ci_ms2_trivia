@@ -112,7 +112,7 @@ choices.forEach(choice => {
                 icon: 'success',
                 title: `Thats the right answer!`,
                 showConfirmButton: false,
-                timer: 3000
+                timer: 3500
                 
               });
               selectedChoice.parentElement.classList.add('correct');
@@ -122,7 +122,7 @@ choices.forEach(choice => {
                 icon: 'error',
                 title: `Oops... that is not the right answer! The correct answer was number ${currentQuestion.answer}`,
                 showConfirmButton: false,
-                timer: 3000
+                timer: 3500
               });
               selectedChoice.parentElement.classList.add('incorrect');
 
