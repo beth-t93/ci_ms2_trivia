@@ -95,6 +95,7 @@
     height: 15rem;
     animation: spin 3s linear infinite;
     padding: 1.25rem;
+    margin: auto;
     
 }
 
