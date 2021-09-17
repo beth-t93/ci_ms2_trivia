@@ -5,9 +5,9 @@ const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
 const scoreArea = document.getElementById('scoreArea');
 const finalScore = document.getElementById('finalScore');
-
 const maxQuestions = 25;
 
+let questionCounter = 0;
 let currentQuestion = {};
 let acceptingAnswers = false;
 let scoreTitle = 0;
@@ -15,6 +15,9 @@ let questionNumber = 0;
 let availableQuestions = [];
 
 let questions = [];
+
+
+
 
 // Fetch and Catch to pull data from API into the DOM
 getData = () => {
@@ -56,23 +59,22 @@ getData();
 
 // Starts the game
 startGame = () => {
-    questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
     questionNumberArea.innerHTML = `${questionNumber}`;
     getNewQuestion();
-    game.classList.remove('hide');
-    // loader.classList.add('hide');
   };
 
 // Pulls a new question and increases question number
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
+        loader(true);
         localStorage.setItem("mostRecentScore", score);
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
         finalScore.innerText = (`Congratulations you scored ${score}`);
+        loader(false);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
@@ -90,7 +92,6 @@ getNewQuestion = () => {
     availableQuesions.splice(questionIndex, 1);
     acceptingAnswers = true;
     }
-
 };
 
 // listens for answers and gives feedback if correct or incorrect
@@ -132,9 +133,10 @@ choices.forEach(choice => {
     });
 });
 
+// increase quiz score for each correct answer
 incrementScore = num => {
     score += num;
     scoreTitle.innerText = score;
 };
 
-startGame();
+
