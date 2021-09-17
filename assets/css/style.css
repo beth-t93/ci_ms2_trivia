@@ -1,14 +1,14 @@
-/** Google Font Import **/
+/* Google Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap');
 
 
-/** Global Styling **/
+/* Global Styling */
 :root {
     background-color: #0b3954;
     font-family: 'Montserrat', sans-serif;
 }
 
-/** Index Logo Section **/
+/* Index Logo Section */
 #logo {
     font-family: 'Bebas Neue', cursive;
     color: #ff5a5f;
@@ -31,7 +31,7 @@
     justify-content: center;
 }
 
-/** Quiz Picker Styling **/
+/* Quiz Picker Styling */
 #quizSelection {
     color: #bfd7ea;
     display: inline-block;
@@ -39,7 +39,7 @@
 
 
 
-/** Homepage Buttons **/
+/* Homepage Button */
 #buttons {
     display: flex;
     justify-content: center;
@@ -48,9 +48,10 @@
     margin-top: 2rem;
 }
 
+/* Referenced from https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
 #buttons:hover {
     cursor: pointer;
-    transform: scale(1.1); /** Referenced from https://www.w3schools.com/howto/howto_css_zoom_hover.asp **/
+    transform: scale(1.1); 
 }
 
 .btn {
@@ -63,7 +64,7 @@
     width: 10rem;
 }
 
-/** changes to page layout for desktop - drop whole page content down from the top of the page **/
+/* changes to page layout for desktop - drop whole page content down from the top of the page */
 @media only screen and (min-width: 768px) {
     body {
         margin: 120px 10px;
@@ -83,9 +84,9 @@
     font-size: 200%;
 }
 
-/** Game page Styling **/
+/** Game page Styling */
 
-/** Loading Item from https://www.w3schools.com/howto/howto_css_loader.asp **/
+/* Loading Item from https://www.w3schools.com/howto/howto_css_loader.asp */
 .loadingWheel {
     border: 2rem solid #bfd7ea;
     border-radius: 50%;
@@ -106,7 +107,7 @@
     }
 }
 
-/** Question Number Progress **/
+/* Question Number Progress */
 #progress-display {
     display: flex;
     font-size: 1.2rem;
@@ -120,7 +121,7 @@
     margin: 0%;
 }
 
-/** Quiz area Styling **/
+/* Quiz area Styling */
 #question {
     color: #bfd7ea;
     text-align: center;
@@ -168,7 +169,7 @@
     background-color: #0b3954;
 }
 
-/** Score Area Styling **/
+/* Score Area Styling */
 #score {
     text-align: center;
     color: #bfd7ea;
