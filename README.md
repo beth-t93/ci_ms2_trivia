@@ -106,8 +106,6 @@ I have chosen a colour scheme that is bright and eyecatching to the user.
 ### Fonts/Typography
 To ensure the website is easily readable while also keeping to the simple and minimal design, the fonts used are: Bebas Neue for headings and the logo and Montserrat for all other text (these are taken from Google Fonts library) with sans-serif being the fallback font should either of the selected fonts be unavailable. 
 
-### Imagery
-
 ## Skeleton
 
 ## Surface
@@ -127,7 +125,7 @@ To ensure the website is easily readable while also keeping to the simple and mi
 ### Languages
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [CSS3](https://en.wikipedia.org/wiki/CSS)
-= [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Other Tools
 1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) was used to create the inital logo idea and colour swatch - I ended up using plain text in the logo so chose to code this in html rather than using an image file.
@@ -144,7 +142,9 @@ To ensure the website is easily readable while also keeping to the simple and mi
 
 
 ## Features
+#### Feature 1 - Homepage
 
+#### Feature 2 - Quiz and Score Page
 
 ## Validation and Testing
 
@@ -153,6 +153,9 @@ I used the [W3C Markup Validation Service](https://validator.w3.org/) to validat
 
 ### CSS Validation
 I used the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS of the website.
+
+### JavaScript Validation
+
 
 ### Accessibility
 I used the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) to check that my website was accessible.
