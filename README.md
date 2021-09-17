@@ -122,7 +122,7 @@ To ensure the website is easily readable while also keeping to the simple and mi
 = [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Frameworks, Libraries and Other Tools
-1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) was used to create the brand logo.
+1. [Affinity Designer](https://affinity.serif.com/en-gb/designer/) was used to create the inital logo idea and colour swatch - I ended up using plain text in the logo so chose to code this in html rather than using an image file.
 2. [Sweet Alert](https://sweetalert2.github.io/) was used to create modals for user feedback on each answer.
 3. [Git](https://git-scm.com/) was used within VS Code for version control to push code to GitHub.
 4. [Github](https://github.com/) was used as a remote repository to store code.
