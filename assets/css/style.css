@@ -156,20 +156,21 @@
     ;
 }
 
+.hide {
+    display: none;
+}
+
+.correct {
+    background-color: #ff5a5f;
+}
+
+.incorrect {
+    background-color: #0b3954;
+}
+
 /** Score Area Styling **/
 #score {
     text-align: center;
     color: #bfd7ea;
 }
 
-.hide {
-    display: none;
-}
-
-.correct {
-    background-color: #bfd7ea;
-}
-
-.incorrect {
-    background-color: #ff5a5f;
-}
