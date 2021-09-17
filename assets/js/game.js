@@ -7,7 +7,6 @@ const scoreArea = document.getElementById('scoreArea');
 const finalScore = document.getElementById('finalScore');
 
 const scoreText = document.getElementById("score");
-
 const maxQuestions = 25;
 
 let currentQuestion = {};
@@ -51,7 +50,7 @@ getData = () => {
         .catch((err) => {
             console.error(err);
         });
-}
+};
 
 getData();
 
@@ -61,7 +60,7 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuesions = [...questions];
-    questionNumberArea.innerHTML = `${questionNumber}`
+    questionNumberArea.innerHTML = `${questionNumber}`;
     getNewQuestion();
     game.classList.remove('hide');
     // loader.classList.add('hide');
@@ -78,8 +77,7 @@ getNewQuestion = () => {
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
-        questionNumberArea.innerHTML = `${questionNumber}`
-        // questionCounterText.innerText = `${questionCounter}`;
+        questionNumberArea.innerHTML = `${questionNumber}`;
 
         const questionIndex = Math.floor(Math.random() * availableQuesions.length);
         currentQuestion = availableQuesions[questionIndex];
@@ -95,7 +93,6 @@ getNewQuestion = () => {
     }
 
 };
-
 
 // listens for answers and gives feedback if correct or incorrect
 choices.forEach(choice => {
@@ -128,7 +125,6 @@ choices.forEach(choice => {
 
         } 
         
-        
         setTimeout(() => {
             selectedChoice.parentElement.classList.remove('correct');
             selectedChoice.parentElement.classList.remove('incorrect');
@@ -139,7 +135,7 @@ choices.forEach(choice => {
 
 incrementScore = num => {
     score += num;
-    scoreTitle.innerText = score
+    scoreTitle.innerText = score;
 };
 
 startGame();
