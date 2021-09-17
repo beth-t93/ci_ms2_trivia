@@ -19,8 +19,8 @@
 
 #logo h1 {
     margin: 0;
-    padding-top: 20px;
-    letter-spacing: 8px;
+    padding-top: 1.25rem;
+    letter-spacing: 0.5rem;
     justify-content: center;
 }
 
@@ -44,7 +44,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 0.6rem;
     margin-top: 2rem;
 }
 
@@ -67,7 +67,7 @@
 /* changes to page layout for desktop - drop whole page content down from the top of the page */
 @media only screen and (min-width: 768px) {
     body {
-        margin: 120px 10px;
+        margin: 7.5rem 0.6rem;
     }
 }
 
@@ -84,7 +84,7 @@
     font-size: 200%;
 }
 
-/** Game page Styling */
+/* Game page Styling */
 
 /* Loading Item from https://www.w3schools.com/howto/howto_css_loader.asp */
 .loadingWheel {
@@ -94,7 +94,7 @@
     width: 15rem;
     height: 15rem;
     animation: spin 3s linear infinite;
-    padding: 20px;
+    padding: 1.25rem;
     
 }
 
