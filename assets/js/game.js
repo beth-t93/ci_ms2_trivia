@@ -6,7 +6,6 @@ const questionNumberArea = document.getElementById('progress-number');
 const scoreArea = document.getElementById('scoreArea');
 const finalScore = document.getElementById('finalScore');
 
-const scoreText = document.getElementById("score");
 const maxQuestions = 25;
 
 let currentQuestion = {};
