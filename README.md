@@ -113,6 +113,14 @@ To ensure the website is easily readable while also keeping to the simple and mi
 ## Surface
 
 ## Wireframes
+- [Home - desktop](docs/wireframe/index-desktop-wireframe.pdf)
+- [Home - tablet](docs/wireframe/index-tablet-wireframe.pdf)
+- [Home - mobile](docs/wireframe/index-mobile-wireframe.pdf)
+
+- [Game - desktop](docs/wireframe/game-desktop-wireframe.pdf)
+- [Game - tablet](docs/wireframe/game-tablet-wireframe.pdf)
+- [Game -mobile](docs/wireframe/game-mobile-wireframe.pdf)
+
 
 ## Technologies Used
 
