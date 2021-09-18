@@ -1,5 +1,5 @@
 /* Google Font Import */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700t&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&display=swap');
 
 
 /* Global Styling */
@@ -62,7 +62,7 @@
     background-color: #ff5a5f;
     padding: 0.5rem;
     width: 10rem;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 /* changes to page layout for desktop - drop whole page content down from the top of the page */
@@ -118,6 +118,7 @@
     width: 100%;
     padding-left: 5rem;
     padding-top: 3rem;
+    font-weight: 400;
 }
 
 #progress-heading {
@@ -130,6 +131,7 @@
     text-align: center;
     padding: 2rem 4rem;
     margin: 0%;
+    font-weight: 400;
 }
 
 .answerChoice {
