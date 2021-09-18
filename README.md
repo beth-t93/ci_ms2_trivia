@@ -1,4 +1,4 @@
-![images](docs/mockup/...) mockup here
+![images](docs/mockup/mockup.png)
 
 [View the deployed site here](https://beth-t93.github.io/ci_ms2_trivia/)
 
