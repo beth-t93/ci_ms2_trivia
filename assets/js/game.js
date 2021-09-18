@@ -1,6 +1,6 @@
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
-const loader = document.getElementsByClassName('loadingWheel');
+const loader = document.getElementById('loader');
 const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
 const scoreArea = document.getElementById('scoreArea');
@@ -17,15 +17,15 @@ let availableQuestions = [];
 let questions = [];
 
 
-
-
 // Fetch and Catch to pull data from API into the DOM
 getData = () => {
+    loadingWheel(true);
     fetch(
-        "https://opentdb.com/api.php?amount=25&category=9&difficulty=medium&type=multiple"
+        "https://opentdb.com/api.php?amount=2&category=9&difficulty=medium&type=multiple"
     )
         .then((res) => {
             return res.json();
+            
         })
         .then((loadedQuestions) => {
             questions = loadedQuestions.results.map((loadedQuestion) => {
@@ -47,7 +47,10 @@ getData = () => {
     
                 return formattedQuestion;
             });
+            loadingWheel(false);
+            game.classList.remove('hide');
             startGame();
+            
         })
         .catch((err) => {
             console.error(err);
@@ -68,13 +71,13 @@ startGame = () => {
 // Pulls a new question and increases question number
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
-        loader(true);
+        // loader(true);
         localStorage.setItem("mostRecentScore", score);
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
-        finalScore.innerText = (`Congratulations you scored ${score}`);
-        loader(false);
+        finalScore.innerText = (`${score}`);
+        // loader(false);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
@@ -139,4 +142,12 @@ incrementScore = num => {
     scoreTitle.innerText = score;
 };
 
+// shows and hides the loading wheel
+function loadingWheel(loading) {
+    if (loading) {
+        loader.classList.remove("hide"); 
+    } else {
+        loader.classList.add("hide");
+    }
+}
 
