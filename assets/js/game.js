@@ -83,7 +83,7 @@ getNewQuestion = () => {
         question.innerText = currentQuestion.question;
 
         choices.forEach(choice => {
-        const number = choice.dataset["number"];
+        const number = choice.dataset.number;
         choice.innerText = currentQuestion["choice" + number];
         });
 
@@ -99,7 +99,7 @@ choices.forEach(choice => {
 
         acceptingAnswers = false;
         let selectedChoice = e.target;
-        let selecetedAnswer = selectedChoice.dataset["number"];
+        let selecetedAnswer = selectedChoice.dataset.number;
 
         // Sweet Alert Modals for user feedback from https://sweetalert2.github.io/#examples
         if (selecetedAnswer == currentQuestion.answer) {
