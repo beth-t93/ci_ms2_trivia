@@ -16,7 +16,7 @@ let questionNumber = 0;
 getData = () => {
     loadingWheel(true);
     fetch(
-        "https://opentdb.com/api.php?amount=4&category=9&difficulty=medium&type=multiple"
+        "https://opentdb.com/api.php?amount=25&category=&difficulty=medium&type=multiple"
     )
         .then((res) => {
             return res.json();
