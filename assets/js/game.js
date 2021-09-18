@@ -12,8 +12,6 @@ let currentQuestion = {};
 let acceptingAnswers = false;
 let questionNumber = 0;
 
-
-
 // Fetch and Catch to pull data from API into the DOM
 getData = () => {
     loadingWheel(true);
@@ -56,7 +54,6 @@ getData = () => {
 
 getData();
 
-
 // Starts the game
 startGame = () => {
     score = 0;
@@ -80,11 +77,11 @@ getNewQuestion = () => {
 
         const questionIndex = Math.floor(Math.random() * availableQuesions.length);
         currentQuestion = availableQuesions[questionIndex];
-        question.innerText = currentQuestion.question;
+        question.innerHTML = currentQuestion.question;
 
         choices.forEach(choice => {
         const number = choice.dataset.number;
-        choice.innerText = currentQuestion["choice" + number];
+        choice.innerHTML = currentQuestion["choice" + number];
         });
 
     availableQuesions.splice(questionIndex, 1);
