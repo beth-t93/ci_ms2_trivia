@@ -87,7 +87,7 @@ Based on the above information, features to be included in the design include:
 - Favicon to help users identify the site in any tabs.
 
 ## Structure
-A responsive trivia quiz site consisiting of ... pages
+A responsive trivia quiz site consisiting of 2 pages
 
 The site will be easy to use across all devices, enabling the user to start a quiz quickly from pretty much anywhere.
 
@@ -151,8 +151,12 @@ To ensure the website is easily readable while also keeping to the simple and mi
 ### HTML Validation
 I used the [W3C Markup Validation Service](https://validator.w3.org/) to validate the HTML of the website. All pages passed with 0 errors and 0 warnings.
 
+- [Home](docs/validation/html/html-validation-index.png)
+- [Game](docs/validation/html/html-validation-quiz.png)
 ### CSS Validation
 I used the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate the CSS of the website.
+
+- [CSS](docs/validation/css/css-validation.png)
 
 ### JavaScript Validation
 
@@ -160,8 +164,14 @@ I used the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to
 ### Accessibility
 I used the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) to check that my website was accessible.
 
+- [Home](docs/validation/accessibility/wave-index.png)
+- [Game](docs/validation/accessibility/wave-game.png)
+
 ### Performance
 I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) to measure the performance and speed of my website.
+
+- [Home](docs/validation/lighthouse/lighthouse-index.png)
+- [Game](docs/validation/lighthouse/lighthouse-quiz.png)
 
 ### Testing on other devices
 
