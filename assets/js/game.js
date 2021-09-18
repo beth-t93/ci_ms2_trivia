@@ -21,7 +21,7 @@ let questions = [];
 getData = () => {
     loadingWheel(true);
     fetch(
-        "https://opentdb.com/api.php?amount=2&category=9&difficulty=medium&type=multiple"
+        "https://opentdb.com/api.php?amount=4&category=9&difficulty=medium&type=multiple"
     )
         .then((res) => {
             return res.json();
@@ -71,13 +71,11 @@ startGame = () => {
 // Pulls a new question and increases question number
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
-        // loader(true);
         localStorage.setItem("mostRecentScore", score);
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
         finalScore.innerText = (`${score}`);
-        // loader(false);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
@@ -136,13 +134,13 @@ choices.forEach(choice => {
     });
 });
 
-// increase quiz score for each correct answer
+// Increase quiz score for each correct answer
 incrementScore = num => {
     score += num;
     scoreTitle.innerText = score;
 };
 
-// shows and hides the loading wheel
+// Shows and hides the loading wheel
 function loadingWheel(loading) {
     if (loading) {
         loader.classList.remove("hide"); 
