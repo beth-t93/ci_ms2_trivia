@@ -10,11 +10,8 @@ const maxQuestions = 25;
 let questionCounter = 0;
 let currentQuestion = {};
 let acceptingAnswers = false;
-let scoreTitle = 0;
 let questionNumber = 0;
-let availableQuestions = [];
 
-let questions = [];
 
 
 // Fetch and Catch to pull data from API into the DOM
@@ -137,7 +134,7 @@ choices.forEach(choice => {
 // Increase quiz score for each correct answer
 incrementScore = num => {
     score += num;
-    scoreTitle.innerText = score;
+    finalScore.innerText = score;
 };
 
 // Shows and hides the loading wheel
