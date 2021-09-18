@@ -159,6 +159,18 @@
     ;
 }
 
+@media only screen and (max-width: 500px) {
+    #question {
+        padding: 1.5rem 0rem;
+    }
+
+    .answerChoice {
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+    }
+}
+
 .hide {
     display: none;
 }
