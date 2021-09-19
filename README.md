@@ -46,7 +46,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 - Start the game quickly and easily
 - Be constantly engaged during the game with feedback on answers
 - The questions will be updated regularly to avoid repeat questions
-- The site will be eyecatching, but also uses a design and colour scheme that is not difficult to read and use.
+- The site will be eye-catching, but also uses a design and colour scheme that is not difficult to read and use.
 
 
 ### Target Audience
@@ -57,16 +57,16 @@ This constant flow of new questions will reduce the risk of users getting bored 
 ### User Stories
 #### Visitor Goals
 1. As a visitor I want the site to be easy and simple to use.
-2. As a visitor I want the site to be colourful and eyecatching, as well as be easy to read.
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
 3. As a visitor I would like to be able to start a quiz quickly
 4. As a visitor I would like new questions to be added regularly
 5. As a visitor I want to be able to return to the site and not get the same questions every time.
 6. As a visitor I would like to be able to see my final score
-
+7. As a visitor I would like to keep up to date with any new quiz content via social media.
 #### Site Owner Goals
-7. As a site owner I want the site to be easy to use.
-8. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
-9. Ensure there is a variety of questions so users will not get the same set of quesitons if they play more than once.
+8. As a site owner I want the site to be easy to use.
+9. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
+10. Ensure there is a variety of questions so users will not get the same set of questions if they play more than once.
 
 ### User Requirements and Expectations
 #### Requirements
@@ -143,6 +143,39 @@ To ensure the website is easily readable while also keeping to the simple and mi
 
 ## Features
 #### Feature 1 - Homepage
+The homepage is made up of three feautres:
+1. The title section
+2. The play button
+3. Social media links
+##### 1. Title
+![images](docs/features/feature-title.png)
+- This is the first thing you see when you get to the site so I decided this needed to be easy to read, but still follow the bright colour scheme of the site.
+- As I wanted to keep the logo simple I used text only, in a bold, striking font.
+- The paragraph on this page give the user an idea of the kind of quiz they are about to start.
+###### User stories covered by this feautre:
+1. As a visitor I want the site to be easy and simple to use.
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
+8. As a site owner I want the site to be easy to use.
+
+
+
+##### 2. Play button
+![images](docs/features/feature-index-play-button.png)
+- This is centrally located on the page making it easy for a user to start a game
+- The colour matches the text and title above to make the site eye-catching for the user.
+###### User stories covered by this feautre:
+1. As a visitor I want the site to be easy and simple to use.
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
+3. As a visitor I would like to be able to start a quiz quickly
+8. As a site owner I want the site to be easy to use.
+
+##### 3. Soocial media links
+![images](docs/features/feature-social-media.png)
+- I added these links so that users would be able to keep up to date with any future developments with the quiz, such as new categories or the addition of a leaderboard.
+- The colour I chose for these is a lighter blue which offers more of a contrast with the rest of the page.
+###### User stories covered by this feautre:
+7. As a visitor I would like to keep up to date with any new quiz content via social media.
+
 
 #### Feature 2 - Quiz and Score Page
 
