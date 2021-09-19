@@ -140,6 +140,7 @@ To ensure the website is easily readable while also keeping to the simple and mi
 8. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
 9. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
 10. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
+11. [Open Trivia Database](https://opentdb.com/api_config.php) was used as an API for the quiz questions.
 
 
 ## Features
@@ -383,7 +384,14 @@ This site is deployed using GitHub pages, this was the process:
 
 ## Credits
 ### Content and Media
+- The questions for the quiz are pulled from [Open Trivia Database](https://opentdb.com/api_config.php)
+- All other copy was written by myself
+- The concept for the logo was my own.
 
 ### Code
+- [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to create a loading wheel.
+- [Sweet Alert](https://sweetalert2.github.io/) was used to create modals for user feedback on each answer.
+- [Open Trivia Database](https://opentdb.com/api_config.php) was used as an API for the quiz questions.
+
 
 ## Acknowledgements
