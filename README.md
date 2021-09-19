@@ -339,13 +339,26 @@ All devices passed the tests
     | ------- | ------ | --------------- | ------------- |
     | Use of an API that has a feature to add questions to it | The API will automatically pull through questions that have been added to the site | The questions on each quiz will change every time a user plays | Works as expected |
 
-
-
-
 ## Bugs
+- Bug : Quiz questions contained other charaters instead of the correct punctuation.
+- Fix: Update JavaScript to innerHTML rather than innnerText for the question functions.
+
+- Bug: Loading wheel and quiz showing at the same time, quiz and final score showing at the same time and loading wheel preventing all other page content from showing.
+- Fix: Check and ensure 'hide' class was active and inactive on the correct elements at the correct time.
+
+- Bug: CSS stylesheets not pulling thorugh to GitHub Pages.
+- Fix : Remove error with and extra '/' in the link to the stylesheet.
+
+- Bug: The timeout of the Sweet Alert and the New Question function preventing the user to easily see what the correct answer was should they get the wrong answer.
+- Fix: Add in the correct answer number to the Sweet Alert and increase the amount of time before the next question loads.
+
+- Bug: The answer divs becoming to narrow to show answer on smaller screens
+- Fix: Add a media query to remove padding from around the edge of the divs to allow them to fill the width of the screen.
+
+- Bug: API data not loading to site.
+- Fix: Add fetch statement inside a function.
 
 ## Deployment
-
 ### Github Pages
 This site is deployed using GitHub pages, this was the process:
 1. Log in and selected my MS1 repository
