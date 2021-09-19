@@ -124,7 +124,7 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove('correct');
             selectedChoice.parentElement.classList.remove('incorrect');
             getNewQuestion();
-          }, 1000);
+          }, 4000);
     });
 });
 
