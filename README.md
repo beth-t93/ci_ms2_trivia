@@ -265,8 +265,18 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 - Safari
 
 #### Tests Performed
+- The 'play' button on the homepage successfully takes you to a quiz.
+- The social media links on the homepage open to the corresponding site in a new tab.
+- The 'back home' button on the score page successfully takes you back to the homepage.
+- All pages are repsonsive so the site looks and works the same on all screen sizes
+- The Sweet Alert modals on the quiz page work correctly giving the user feedback on their answer.
+- All text on the site is clear and legible.
+- The score page tells you how many questions you got correct out of the total amount of questions in the quiz.
+- The answer options on the quiz page vhange colour in response to the selected answer being correct or incorrect.
+- The ansewr options transform on hover, allowing the user to see what answer they are hovering over before they select.
 
 #### Results
+All devices passed the tests
 
 ### Testing of User Stories
 
