@@ -5,7 +5,7 @@ const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
 const scoreArea = document.getElementById('scoreArea');
 const finalScore = document.getElementById('finalScore');
-const maxQuestions = 25;
+const maxQuestions = 15;
 
 let questionCounter = 0;
 let currentQuestion = {};
@@ -16,7 +16,7 @@ let questionNumber = 0;
 getData = () => {
     loadingWheel(true);
     fetch(
-        "https://opentdb.com/api.php?amount=25&category=&difficulty=medium&type=multiple"
+        "https://opentdb.com/api.php?amount=15&category=&difficulty=medium&type=multiple"
     )
         .then((res) => {
             return res.json();
@@ -69,7 +69,7 @@ getNewQuestion = () => {
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
-        finalScore.innerText = (`${score}/${maxQuestions}`);
+        finalScore.innerText = (`${score} / ${maxQuestions}`);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
