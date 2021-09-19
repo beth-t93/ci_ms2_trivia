@@ -51,7 +51,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 
 
 ### Target Audience
-- Quiz enthusiast
+- Quiz enthusiasts
 - Someone looking to pass the time without having to invest time in signing up to a site
 - A casual user
 
@@ -74,7 +74,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 - Easy to navigate
 - Appealing design
 - Relevant information to guide the user through the game
-- Clean design that further helps the user navigate throught a game with no distractions.
+- Clean design that further helps the user navigate through a game with no distractions.
 
 #### Expectations
 - Buttons take you to the page they say they will
@@ -101,10 +101,10 @@ The colour scheme for this site is meant to be bright and eye catching to the us
 
 ![images](docs/features/ms2-colour-scheme.jpg)
 
-I have chosen a colour scheme that is bright and eyecatching to the user.
- -Colour 1: (Hex: #0B3954) This is a dark blue that is used for the background thoughout the whole site, it gives the other content a darker background so it is able to stand out from the page. This colour is also used for the text colour on the buttons of the site.
- -Colour 2: (Hex: #BFD7EA) I chose this colour to contrast well with the background colour, it will be used throughout the site for key information, such as the quiz questions and social media icons.
- -Colour 3: (Hex: #FF5A5F) This colour is used as a fun pop of colour against the dark background. It will be used for the logo and test content on the home page, as well as give emphasis to other items on the site, such as the answer selection boxes.
+I have chosen a colour scheme that is bright and eye-catching to the user.
+ - Colour 1: (Hex: #0B3954) This is a dark blue that is used for the background thoughout the whole site, it gives the other content a darker background so it is able to stand out from the page. This colour is also used for the text colour on the buttons of the site.
+ - Colour 2: (Hex: #BFD7EA) I chose this colour to contrast well with the background colour, it will be used throughout the site for key information, such as the quiz questions and social media icons.
+ - Colour 3: (Hex: #FF5A5F) This colour is used as a fun pop of colour against the dark background. It will be used for the logo and test content on the home page, as well as give emphasis to other items on the site, such as the answer selection boxes.
 ### Fonts/Typography
 To ensure the website is easily readable while also keeping to the simple and minimal design, the fonts used are: Bebas Neue for headings and the logo and Montserrat for all other text (these are taken from Google Fonts library) with sans-serif being the fallback font should either of the selected fonts be unavailable. 
 
@@ -153,7 +153,7 @@ The homepage is made up of three feautres:
 ![images](docs/features/feature-title.png)
 - This is the first thing you see when you get to the site so I decided this needed to be easy to read, but still follow the bright colour scheme of the site.
 - As I wanted to keep the logo simple I used text only, in a bold, striking font.
-- The paragraph on this page give the user an idea of the kind of quiz they are about to start.
+- The paragraph on this page gives the user an idea of the kind of quiz they are about to start.
 ###### User stories covered by this feautre:
 1. As a visitor I want the site to be easy and simple to use.
 2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
@@ -186,7 +186,7 @@ The homepage is made up of three feautres:
 
 ##### The quiz
 ![images](docs/features/feature-questions-answers.png)
-- To create the layout for this page I used seperate divs for the answers, allowing the different parts to be customised seperatley.
+- To create the layout for this page I used separate divs for the answers, allowing the different parts to be customised separatley.
 - To give the user feedback on which answer they were on I added a hover class to transform the div whenever a mouse goes over it.
 - I kept to the same minimal design, like on the homepage to keep the site looking clean and still make it easy to use.
 - The questions will all be pulled from the [Open Trvia API](https://opentdb.com/api_config.php). This makes sure there is a large number of questions that could be used in the quiz
@@ -201,14 +201,14 @@ The homepage is made up of three feautres:
 
 ##### Sweet Alert
 ![images](docs/features/feature-sweet-alert.png)
-- I decided to use [Sweet Alert](https://sweetalert2.github.io/) to give users feedback one their answer, and to inform them of the correct answer shuold they get it wrong.
+- I decided to use [Sweet Alert](https://sweetalert2.github.io/) to give users feedback one their answer, and to inform them of the correct answer should they get it wrong.
 ###### User stories covered by this feautre:
 4. As a visitor I would like to have feedback on my answers
 
 
 ##### Score area
 ![images](docs/features/feature-final-score.png)
-- This tells the user how may quesitons they got correct.
+- This tells the user how may questions they got correct.
 - I kept the design of this part of the page simple, allowing the user to clearly see their final score.
 ###### User stories covered by this feautre:
 2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
@@ -259,7 +259,7 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 
 #### Devices tested:
 - iPhone 12 Pro
-- Samsung s20+
+- Samsung Galaxy s20+
 - iPad Pro 11"
 - 21.5" iMac
 - Asus Chromebook Flip C434TA
@@ -267,7 +267,6 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 #### Browser Testing
 - Chrome
 - Brave (Chromium)
-- Edge
 - Safari
 
 #### Tests Performed
@@ -278,11 +277,14 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 - The Sweet Alert modals on the quiz page work correctly giving the user feedback on their answer.
 - All text on the site is clear and legible.
 - The score page tells you how many questions you got correct out of the total amount of questions in the quiz.
-- The answer options on the quiz page vhange colour in response to the selected answer being correct or incorrect.
+- The answer options on the quiz page change colour in response to the selected answer being correct or incorrect.
 - The ansewr options transform on hover, allowing the user to see what answer they are hovering over before they select.
 
 #### Results
 All devices passed the tests
+
+### Testing User Stories
+
 1. As a visitor I want the site to be easy and simple to use.
     
     | Feature | Action | Expected Result | Actual Result |
@@ -293,7 +295,7 @@ All devices passed the tests
     
     | Feature | Action | Expected Result | Actual Result |
     | ------- | ------ | --------------- | ------------- |
-    | Bright colourscheme that is also still legible | All colours used on the site are bright and colourful, but still allow good legibility | Users find the site eye-catching and have no issues with the sites ease of use | Works as expected |
+    | Bright colour scheme that is also still legible | All colours used on the site are bright and colourful, but still allow good legibility | Users find the site eye-catching and have no issues with the sites ease of use | Works as expected |
 
 3. As a visitor I would like to be able to start a quiz quickly
 
@@ -317,7 +319,7 @@ All devices passed the tests
 
     | Feature | Action | Expected Result | Actual Result |
     | ------- | ------ | --------------- | ------------- |
-    | Seperate score area at the end of the quiz | When the users completes the quiz a new div appears, showing the score | The user is easily able to see their final score at the end of the questions | Works as expected |
+    | Separate score area at the end of the quiz | When the users completes the quiz a new div appears, showing the score | The user is easily able to see their final score at the end of the questions | Works as expected |
 
 7. As a visitor I would like to keep up to date with any new quiz content via social media.
 
@@ -329,7 +331,7 @@ All devices passed the tests
 
     | Feature | Action | Expected Result | Actual Result |
     | ------- | ------ | --------------- | ------------- |
-    | Simple page design | Easily see which button you need to press to progress through the site | The user can esily navigate the site to start a new quiz | Works as expected |
+    | Simple page design | Easily see which button you need to press to progress through the site | The user can easily navigate the site to start a new quiz | Works as expected |
 
 
 9. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
@@ -353,7 +355,7 @@ All devices passed the tests
 - Bug: The timeout of the Sweet Alert and the New Question function preventing the user to easily see what the correct answer was should they get the wrong answer.
 - Fix: Add in the correct answer number to the Sweet Alert and increase the amount of time before the next question loads.
 
-- Bug: The answer divs becoming to narrow to show answer on smaller screens
+- Bug: The answer divs becoming too narrow to show answer on smaller screens
 - Fix: Add a media query to remove padding from around the edge of the divs to allow them to fill the width of the screen.
 
 - Bug: API data not loading to site.
