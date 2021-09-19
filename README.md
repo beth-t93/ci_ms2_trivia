@@ -59,7 +59,7 @@ This constant flow of new questions will reduce the risk of users getting bored 
 1. As a visitor I want the site to be easy and simple to use.
 2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
 3. As a visitor I would like to be able to start a quiz quickly
-4. As a visitor I would like new questions to be added regularly
+4. As a visitor I would like to have feedback on my answers
 5. As a visitor I want to be able to return to the site and not get the same questions every time.
 6. As a visitor I would like to be able to see my final score
 7. As a visitor I would like to keep up to date with any new quiz content via social media.
@@ -157,8 +157,6 @@ The homepage is made up of three feautres:
 2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
 8. As a site owner I want the site to be easy to use.
 
-
-
 ##### 2. Play button
 ![images](docs/features/feature-index-play-button.png)
 - This is centrally located on the page making it easy for a user to start a game
@@ -169,7 +167,7 @@ The homepage is made up of three feautres:
 3. As a visitor I would like to be able to start a quiz quickly
 8. As a site owner I want the site to be easy to use.
 
-##### 3. Soocial media links
+##### 3. Social media links
 ![images](docs/features/feature-social-media.png)
 - I added these links so that users would be able to keep up to date with any future developments with the quiz, such as new categories or the addition of a leaderboard.
 - The colour I chose for these is a lighter blue which offers more of a contrast with the rest of the page.
@@ -178,6 +176,51 @@ The homepage is made up of three feautres:
 
 
 #### Feature 2 - Quiz and Score Page
+- This page is made up of two majaor sections, the quiz itself and then the final score.
+
+##### The question counter
+![images](docs/features/feature-question-counter.png)
+- This lets the user know how many questions they have completed.
+
+##### The quiz
+![images](docs/features/feature-questions-answers.png)
+- To create the layout for this page I used seperate divs for the answers, allowing the different parts to be customised seperatley.
+- To give the user feedback on which answer they were on I added a hover class to transform the div whenever a mouse goes over it.
+- I kept to the same minimal design, like on the homepage to keep the site looking clean and still make it easy to use.
+- The questions will all be pulled from the [Open Trvia API](https://opentdb.com/api_config.php). This makes sure there is a large number of questions that could be used in the quiz
+###### User stories covered by this feautre:
+1. As a visitor I want the site to be easy and simple to use.
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
+4. As a visitor I would like to have feedback on my answers
+5. As a visitor I want to be able to return to the site and not get the same questions every time.
+8. As a site owner I want the site to be easy to use.
+9. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
+10. Ensure there is a variety of questions so users will not get the same set of quesitons if they play more than once.
+
+##### Sweet Alert
+![images](docs/features/feature-sweet-alert.png)
+- I decided to use [Sweet Alert](https://sweetalert2.github.io/) to give users feedback one their answer, and to inform them of the correct answer shuold they get it wrong.
+###### User stories covered by this feautre:
+4. As a visitor I would like to have feedback on my answers
+
+
+##### Score area
+![images](docs/features/feature-final-score.png)
+- This tells the user how may quesitons they got correct.
+- I kept the design of this part of the page simple, allowing the user to clearly see their final score.
+###### User stories covered by this feautre:
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
+4. As a visitor I would like to have feedback on my answers
+6. As a visitor I would like to be able to see my final score
+
+##### Back home button
+![images](docs/features/feature-play-again.png)
+- This button is desigined to stand out from the rest of the page, enabling the user to easily go back to the start to play agian.
+
+###### User stories covered by this feautre:
+1. As a visitor I want the site to be easy and simple to use.
+3. As a visitor I would like to be able to start a quiz quickly
+
 
 ## Validation and Testing
 
