@@ -21,6 +21,7 @@
     - [Languages](#languages)
     - [Frameworks, Librabries and Other Tools](#frameworks-libraries-and-other-tools)
 - [Features](#features)
+- [Future Features](#future-features)
 - [Validation and Testing](#vlaidation-and-testing)
     - [HTML Validation](#html-validation)
     - [CSS Validation](#css-validation)
@@ -221,6 +222,10 @@ The homepage is made up of three feautres:
 1. As a visitor I want the site to be easy and simple to use.
 3. As a visitor I would like to be able to start a quiz quickly
 
+## Future Features
+Something I would look to add in the future is the ability to choose a specific topic and question difficulty to make completing multiple rounds of the quiz more appealing. 
+
+I would also look at adding leaderboards per topic.
 
 ## Validation and Testing
 
