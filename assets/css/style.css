@@ -144,9 +144,11 @@
     background-color: #bfd7ea;
 }
 
-.answerChoice:hover {
-    cursor: pointer;
-    transform: translate(-0.4rem);
+@media only screen and (min-width: 768px) {
+    .answerChoice:hover {
+        cursor: pointer;
+        transform: translate(-0.4rem);
+    }
 }
 
 .choice-letter {
