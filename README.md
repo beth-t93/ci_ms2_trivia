@@ -384,14 +384,13 @@ This site is deployed using GitHub pages, this was the process:
 
 ## Credits
 ### Content and Media
-- The questions for the quiz are pulled from [Open Trivia Database](https://opentdb.com/api_config.php)
-- All other copy was written by myself
+- The API data was sourced from [Open Trivia Database](https://opentdb.com/api_config.php).
+- All other copy was written by myself.
 - The concept for the logo was my own.
 
 ### Code
 - [W3 Schools](https://www.w3schools.com/howto/howto_css_loader.asp) to create a loading wheel.
 - [Sweet Alert](https://sweetalert2.github.io/) was used to create modals for user feedback on each answer.
 - [Open Trivia Database](https://opentdb.com/api_config.php) was used as an API for the quiz questions.
-
 
 ## Acknowledgements
