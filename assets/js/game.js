@@ -69,7 +69,7 @@ getNewQuestion = () => {
         //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
-        finalScore.innerText = (`${score}`);
+        finalScore.innerText = (`${score}/${maxQuestions}`);
     } else {
         scoreArea.classList.add('hide');
         questionNumber++;
@@ -124,7 +124,7 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove('correct');
             selectedChoice.parentElement.classList.remove('incorrect');
             getNewQuestion();
-          }, 4000);
+          }, 3500);
     });
 });
 
