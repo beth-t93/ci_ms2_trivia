@@ -56,15 +56,17 @@ This constant flow of new questions will reduce the risk of users getting bored 
 
 ### User Stories
 #### Visitor Goals
-1. As a first time visitor I want the site to be easy and simple to use
-2. As a first time visitor I want the site to be colourful and eyecatching, as well as be easy to read
-3. As a first time visitor I would like the option to choose the question category
-4. As a first time visitor I would like the option to chosse the question difficulty
-5. As a first time visitor I want to be able to return to the site and not get the same questions every time.
+1. As a visitor I want the site to be easy and simple to use.
+2. As a visitor I want the site to be colourful and eyecatching, as well as be easy to read.
+3. As a visitor I would like to be able to start a quiz quickly
+4. As a visitor I would like new questions to be added regularly
+5. As a visitor I want to be able to return to the site and not get the same questions every time.
+6. As a visitor I would like to be able to see my final score
 
 #### Site Owner Goals
-9. As a site owner I want the site to be easy to use
-10. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions
+7. As a site owner I want the site to be easy to use.
+8. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
+9. Ensure there is a variety of questions so users will not get the same set of quesitons if they play more than once.
 
 ### User Requirements and Expectations
 #### Requirements
@@ -74,16 +76,15 @@ This constant flow of new questions will reduce the risk of users getting bored 
 - Clean design that further helps the user navigate throught a game with no distractions.
 
 #### Expectations
-- Navigation links and buttons take you to the page they say they will
+- Buttons take you to the page they say they will
 - Social media links will open in a separate tab
-- When using the contact button all fields will be required before being able to send the message
 - To receive feedback on answers, whether they are correct or not
 
 
 ## Scope
 Based on the above information, features to be included in the design include:
 - An easy to navigate homepage with an obvious path to the game itself
-- An error (404) page to direct site users back to the homepage should there be a broken URL.
+- A seperate game page that will be easy to use and will be accessible for users
 - Favicon to help users identify the site in any tabs.
 
 ## Structure
@@ -110,7 +111,7 @@ To ensure the website is easily readable while also keeping to the simple and mi
 
 ## Surface
 
-## Wireframes
+### Wireframes
 - [Home - desktop](docs/wireframe/index-desktop-wireframe.pdf)
 - [Home - tablet](docs/wireframe/index-tablet-wireframe.pdf)
 - [Home - mobile](docs/wireframe/index-mobile-wireframe.pdf)
@@ -133,12 +134,11 @@ To ensure the website is easily readable while also keeping to the simple and mi
 3. [Git](https://git-scm.com/) was used within VS Code for version control to push code to GitHub.
 4. [Github](https://github.com/) was used as a remote repository to store code.
 5. [Am I Responsive](http://ami.responsivedesign.is/) was used to create the mockup you see at the start of this README.md file
-6. [Google Maps](https://www.google.co.uk/maps/@53.2525881,-3.1265367,14z) was used to embed a map with location pin into the site
-7. [Coolors](https://coolors.co/) was used to help put together the colour scheme used throughout the site.
-8. [Visual Studio Code](https://visualstudio.microsoft.com/) is the IDE I used to develop the project.
-9. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
-10. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
-11. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
+6. [Coolors](https://coolors.co/) was used to help put together the colour scheme used throughout the site.
+7. [Visual Studio Code](https://visualstudio.microsoft.com/) is the IDE I used to develop the project.
+8. [Balsamiq](https://balsamiq.com/) was used to create the wireframes for the site
+9. [Font Awesome](https://fontawesome.com/) was used for the icons throughout the site.
+10. [Google Fonts](https://fonts.google.com/) Bebas Neue was used for headings, while Montserrat was used for body text.
 
 
 ## Features
