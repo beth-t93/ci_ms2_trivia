@@ -282,8 +282,65 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 
 #### Results
 All devices passed the tests
+1. As a visitor I want the site to be easy and simple to use.
+    
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Simple, easy to use design | User is able to navigate to all parts of the site | User is able to successfully complete the quiz easily | Works as expected |
 
-### Testing of User Stories
+2. As a visitor I want the site to be colourful and eye-catching, as well as be easy to read.
+    
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Bright colourscheme that is also still legible | All colours used on the site are bright and colourful, but still allow good legibility | Users find the site eye-catching and have no issues with the sites ease of use | Works as expected |
+
+3. As a visitor I would like to be able to start a quiz quickly
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Easy to see play button on the first page as the site loads | User presses the play button | To be taken to the start of a quiz | Works as expected |
+
+4. As a visitor I would like to have feedback on my answers
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Sweet Alerts | An alert pops up telling the user if the answer is correct or incorrect, and also tells the user what the correct answer was | User is able to clearly see the result of their answer selection | Works as expected |
+
+5. As a visitor I want to be able to return to the site and not get the same questions every time.
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Use of an API to pull questions to the site | The site automatically pulls questions from an API with many questions that is constantly being added to | The user gets a wide variety of questions, no matter how many times they complete the quiz | Works as expected |
+
+6. As a visitor I would like to be able to see my final score
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Seperate score area at the end of the quiz | When the users completes the quiz a new div appears, showing the score | The user is easily able to see their final score at the end of the questions | Works as expected |
+
+7. As a visitor I would like to keep up to date with any new quiz content via social media.
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Social media links on homepage | The user clicks on the relevant logo at the bottom of the page | The page will open in a new tab | Works as expected|
+
+8. As a site owner I want the site to be easy to use.
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Simple page design | Easily see which button you need to press to progress through the site | The user can esily navigate the site to start a new quiz | Works as expected |
+
+
+9. Keep the maintenance of the site as minimal as possible by using an API to source the quiz questions.
+10. Ensure there is a variety of questions so users will not get the same set of questions if they play more than once.
+
+
+    | Feature | Action | Expected Result | Actual Result |
+    | ------- | ------ | --------------- | ------------- |
+    | Use of an API that has a feature to add questions to it | The API will automatically pull through questions that have been added to the site | The questions on each quiz will change every time a user plays | Works as expected |
+
+
+
 
 ## Bugs
 
