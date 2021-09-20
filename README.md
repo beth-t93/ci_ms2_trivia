@@ -343,8 +343,8 @@ All devices passed the tests
     | Use of an API that has a feature to add questions to it | The API will automatically pull through questions that have been added to the site | The questions on each quiz will change every time a user plays | Works as expected |
 
 ## Bugs
-- Bug : Quiz questions contained other charaters instead of the correct punctuation.
-- Fix: Update JavaScript to innerHTML rather than innnerText for the question functions.
+- Bug : Quiz questions contained other characters instead of the correct punctuation.
+- Fix: Update JavaScript to innerHTML rather than innerText for the question functions.
 
 - Bug: Loading wheel and quiz showing at the same time, quiz and final score showing at the same time and loading wheel preventing all other page content from showing.
 - Fix: Check and ensure 'hide' class was active and inactive on the correct elements at the correct time.
@@ -361,10 +361,13 @@ All devices passed the tests
 - Bug: API data not loading to site.
 - Fix: Add fetch statement inside a function.
 
+- Bug: Sidescroll on small screen sizes
+- Fix: Remove 100% for width in CSS on the dic for the question counter.
+
 ## Deployment
 ### Github Pages
 This site is deployed using GitHub pages, this was the process:
-1. Log in and selected my MS1 repository
+1. Log in and selected my MS2 repository
 2. Go to settings in the repository
 3. Go to 'Pages" in the menu
 4. Click 'source'
