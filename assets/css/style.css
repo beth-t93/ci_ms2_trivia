@@ -78,6 +78,11 @@
     margin-top: 2rem;
 }
 
+.socials a:hover {
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+
 .socials a {
     color: #bfd7ea;
     text-decoration: none;
