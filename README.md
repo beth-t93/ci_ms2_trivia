@@ -392,7 +392,7 @@ This site is deployed using GitHub pages, this was the process:
 ## Credits
 ### Content and Media
 - The API data was sourced from [Open Trivia Database](https://opentdb.com/api_config.php).
-- All other copy was written by myself.
+- All other text was written by myself.
 - The concept for the logo was my own.
 
 ### Code
