@@ -120,7 +120,6 @@
     font-size: 1.2rem;
     color: #bfd7ea;
     text-align: center;
-    width: 100%;
     padding-left: 5rem;
     padding-top: 3rem;
     font-weight: 400;
@@ -186,11 +185,11 @@
 }
 
 .correct {
-    background-color: #ff5a5f;
+    background-color: red;
 }
 
 .incorrect {
-    background-color: #0b3954;
+    background-color: green;
 }
 
 /* Score Area Styling */
