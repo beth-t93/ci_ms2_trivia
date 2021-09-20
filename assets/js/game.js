@@ -3,6 +3,7 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const loader = document.getElementById('loader');
 const game = document.getElementById('gameArea');
 const questionNumberArea = document.getElementById('progress-number');
+const scoreCounter = document.getElementById('scoreText');
 const scoreArea = document.getElementById('scoreArea');
 const finalScore = document.getElementById('finalScore');
 const maxQuestions = 15;
@@ -59,6 +60,7 @@ startGame = () => {
     score = 0;
     availableQuesions = [...questions];
     questionNumberArea.innerHTML = `${questionNumber}`;
+    // scoreCounter.innerHTML = `${score}`
     getNewQuestion();
   };
 
