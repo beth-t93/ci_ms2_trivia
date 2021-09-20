@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.hide {
+    display: none;
+}
+
 /* Index Logo Section */
 #logo {
     font-family: 'Bebas Neue', cursive;
@@ -36,9 +40,6 @@
     color: #bfd7ea;
     display: inline-block;
 }
-
-
-
 /* Homepage Button */
 #buttons {
     display: flex;
@@ -180,16 +181,12 @@
     }
 }
 
-.hide {
-    display: none;
-}
-
 .correct {
-    background-color: red;
+    background-color: green;
 }
 
 .incorrect {
-    background-color: green;
+    background-color: red;
 }
 
 /* Score Area Styling */
