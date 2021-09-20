@@ -282,7 +282,7 @@ I used [Google Lighthouse](https://developers.google.com/web/tools/lighthouse) t
 - All text on the site is clear and legible.
 - The score page tells you how many questions you got correct out of the total amount of questions in the quiz.
 - The answer options on the quiz page change colour in response to the selected answer being correct or incorrect.
-- The ansewr options transform on hover, allowing the user to see what answer they are hovering over before they select.
+- The answer options transform on hover, allowing the user to see what answer they are hovering over before they select.
 
 #### Results
 All devices passed the tests
@@ -354,7 +354,7 @@ All devices passed the tests
 - Fix: Check and ensure 'hide' class was active and inactive on the correct elements at the correct time.
 
 - Bug: CSS stylesheets not pulling thorugh to GitHub Pages.
-- Fix : Remove error with and extra '/' in the link to the stylesheet.
+- Fix : Remove error with an extra '/' in the link to the stylesheet.
 
 - Bug: The timeout of the Sweet Alert and the New Question function preventing the user to easily see what the correct answer was should they get the wrong answer.
 - Fix: Add in the correct answer number to the Sweet Alert and increase the amount of time before the next question loads.
@@ -376,7 +376,7 @@ This site is deployed using GitHub pages, this was the process:
 3. Go to 'Pages" in the menu
 4. Click 'source'
 5. Change to dropdown menu from 'none' to 'main'
-6. Click the link to the delpoyed site once the page has reloaded
+6. Click the link to the deployed site once the page has reloaded
 
 ### Forking this Repository
 1. Find the repository on GitHub
