@@ -40,6 +40,8 @@ The aim of this project is to create a simple and easy to navigate quiz game. Th
 
 This constant flow of new questions will reduce the risk of users getting bored of too many repeat questions.
 
+The quiz will appeal to a large target audience, from first time quizzers, to seasoned professionals who take part in a pub quiz every week.
+
 
 ## User Experience
 ### User Goals
