@@ -243,7 +243,9 @@ I used the [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to
 - [CSS](docs/validation/css/css-validation.png)
 
 ### JavaScript Validation
+I used [JSHint](https://jshint.com/) to vaildate the JavaScript of the site
 
+- [JavaScript](docs/validation/jshint/jshint.png)
 
 ### Accessibility
 I used the [WAVE Web Accessibility Evaluation Tool](https://wave.webaim.org/) to check that my website was accessible.
