@@ -66,7 +66,6 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuesions.length === 0 || questionCounter >= maxQuestions) {
         localStorage.setItem("mostRecentScore", score);
-        //go to score area
         game.classList.add("hide");
         scoreArea.classList.remove("hide");
         finalScore.innerText = (`${score} / ${maxQuestions}`);
